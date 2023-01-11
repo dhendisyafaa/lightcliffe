@@ -1,24 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import Beranda from './pages/Beranda';
+import Promo from './pages/Promo';
+import Order from './pages/Order';
+import Chat from './pages/Chat';
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Routes>
+          <Route exact path="/" element={<Beranda />} />
+          <Route path="promo" element={<Promo/>} />
+          <Route path="order" element={<Order />} />
+          <Route path="chat" element={<Chat />} />
+        </Routes>
+      </div>  
+    </BrowserRouter>
   );
 }
 
