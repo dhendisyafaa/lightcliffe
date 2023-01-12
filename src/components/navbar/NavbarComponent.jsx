@@ -30,7 +30,7 @@ export default class NavbarComponent extends Component {
 
   render() {
     return (
-      <div className="navbar grid grid-cols-4 fixed bottom-0 items-center w-full py-2.5 rounded-t-xl bg-white shadow-[0_35px_60px_14px_rgba(0,0,0,0.3)] z-50">
+      <div className="navbar grid grid-cols-4 fixed bottom-0 items-center w-full py-2.5 rounded-t-xl bg-white shadow-[0_35px_60px_14px_rgba(0,0,0,0.3)] z-30">
         {this.navLink.map(({to, iconNav, navbarName}, index) => {
           return (
             <NavbarIcon key={index} to={to} navbarName={navbarName} iconNav={iconNav} />
