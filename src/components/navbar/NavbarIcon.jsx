@@ -20,9 +20,6 @@ export default class NavbarIcon extends Component {
         <p className={classNames("text-xs", weight ? fontWeight[weight] : "font-light")}>
             {navbarName}
         </p>
-        {/* <p className={'text-xs font-light' + this.props.className}>
-            {this.props.NavbarName}
-        </p> */}
       </NavLink>
     )
   }
