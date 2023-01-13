@@ -6,8 +6,9 @@ export default class HeaderComponent extends Component {
   render() {
     return (
       <div className="header bg-accent w-full h-[8vh] flex justify-end items-center pr-[4%]">
-        
-        <img src={iconacc} alt="" className='w-[28px] h-[28px]'/>
+        <NavLink to="" className="">
+          <img src={iconacc} alt="" className='w-[28px] h-[28px]'/>
+        </NavLink>
       </div>
     )
   }
