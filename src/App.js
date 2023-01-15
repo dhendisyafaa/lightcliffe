@@ -7,16 +7,7 @@ import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 
 function App() {
   return (
-    <BrowserRouter>
-      <div className="App">
-        <Routes>
-          <Route exact path="/" element={<Beranda />} />
-          <Route path="promo" element={<Promo/>} />
-          <Route path="order" element={<Order />} />
-          <Route path="chat" element={<Chat />} />
-        </Routes>
-      </div>  
-    </BrowserRouter>
+    <h1>App.js</h1>
   );
 }
 
